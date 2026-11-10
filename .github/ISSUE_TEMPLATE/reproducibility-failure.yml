@@ -1,0 +1,37 @@
+name: Reproducibility failure
+description: Repeating a recorded run gave a different result
+labels: ["reproducibility"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Run record of the original result
+      description: Path or link to the record (model revision, data manifest, configuration, seed, versions, hardware).
+    validations:
+      required: true
+  - type: textarea
+    id: recorded
+    attributes:
+      label: Recorded result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Result on repetition
+    validations:
+      required: true
+  - type: textarea
+    id: differences
+    attributes:
+      label: Known differences from the record
+      description: Package versions, hardware, driver or CUDA version, data checksums, seed, anything else that differs.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The model revision is a commit hash and matches the record.
+        - label: The data checksums match the record's manifest.
+        - label: This issue contains no personal data, credentials or restricted outputs.
+          required: true

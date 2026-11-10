@@ -1,0 +1,27 @@
+name: Shared workflow self-check
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/**", "tests/**"]
+  pull_request:
+    paths: [".github/workflows/**", "tests/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Download actionlint
+        run: bash <(curl -sSfL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12
+      - name: Lint workflows
+        run: ./actionlint -color
+
+  fixture:
+    uses: ./.github/workflows/python-check.yaml
+    with:
+      working-directory: tests/fixture

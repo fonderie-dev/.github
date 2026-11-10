@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fonderie-fixture"
+dynamic = ["version"]
+description = "Fixture package for the shared workflow self-check."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "R. Heller" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.15"]
+
+[tool.hatch.version]
+path = "src/fonderie_fixture/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fonderie_fixture"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers"]

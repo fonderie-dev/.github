@@ -1,0 +1,53 @@
+name: Python checks
+
+on:
+  workflow_call:
+    inputs:
+      python-versions:
+        description: JSON list of Python versions for the test matrix.
+        type: string
+        default: '["3.11", "3.12", "3.13", "3.14"]'
+      working-directory:
+        description: Directory containing pyproject.toml.
+        type: string
+        default: "."
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install package with dev extra
+        run: python -m pip install -e ".[dev]"
+      - name: Ruff lint
+        run: ruff check --output-format=github .
+      - name: Ruff format
+        run: ruff format --check .
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ${{ fromJSON(inputs.python-versions) }}
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install package with dev extra
+        run: python -m pip install -e ".[dev]"
+      - name: Pytest
+        run: python -m pytest
