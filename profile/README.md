@@ -1,6 +1,5 @@
-<p align="center"><img src="https://raw.githubusercontent.com/fonderie-dev/.github/main/profile/icons/fonderie.svg" alt="Fonderie" width="112"></p>
 <h1 align="center">Fonderie</h1>
-<p align="center">AI model engineering for scientific work.<br>By R. Heller.</p>
+<p align="center">AI model engineering for scientific work.</p>
 <p align="center"><a href="https://fonderie-dev.github.io/website/">Website</a> · <a href="https://fonderie-dev.github.io/website/methode/">Méthode</a> · <a href="https://fonderie-dev.github.io/website/a-propos/">À propos</a></p>
 
 Fonderie trains and fine-tunes open models on domain data, inspects and edits their weights, builds customised local models and evaluates them reproducibly on scientific tasks.
