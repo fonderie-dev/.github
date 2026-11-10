@@ -1,22 +1,22 @@
 <h1 align="center">Fonderie</h1>
 <p align="center">AI model engineering for scientific work.</p>
-<p align="center"><a href="https://fonderie-dev.github.io/website/">Website</a> · <a href="https://fonderie-dev.github.io/website/methode/">Méthode</a> · <a href="https://fonderie-dev.github.io/website/a-propos/">À propos</a></p>
+<p align="center"><a href="https://fonderie-dev.github.io/website/">Website</a> · <a href="https://fonderie-dev.github.io/website/ateliers/">Ateliers</a> · <a href="https://fonderie-dev.github.io/website/modeles/">Modèles</a> · <a href="https://fonderie-dev.github.io/website/methode/">Méthode</a> · <a href="https://fonderie-dev.github.io/website/a-propos/">À propos</a></p>
 
 Fonderie trains and fine-tunes open models on domain data, inspects and edits their weights, builds customised local models and evaluates them reproducibly on scientific tasks.
 
-The workshop is at an early stage. The repositories below are scaffolds that state their intended scope; none of that scope is implemented yet. No model, dataset or benchmark result has been published.
+The workshop is at an early stage. The repositories below are scaffolds that state their intended scope; none of that scope is implemented yet. Each atelier has a project site that outlines its documentation, with every detailed section marked coming soon. No model, dataset or benchmark result has been published.
 
 ## Projects
 
 > **Status** &nbsp; ●●● released &nbsp;·&nbsp; ●●○ usable &nbsp;·&nbsp; ●○○ draft &nbsp;·&nbsp; ○○○ scaffold
 
-| Project | Intended purpose | Status |
-|---|---|:---:|
-| [**Affinage**](https://github.com/fonderie-dev/fonderie-affinage) | Training and fine-tuning open models on domain data, and packaging the results as customised local models. | ○○○ |
-| [**Burin**](https://github.com/fonderie-dev/fonderie-burin) | Inspecting and editing model weights: tensor statistics, checkpoint comparison and recorded edits. | ○○○ |
-| [**Essai**](https://github.com/fonderie-dev/fonderie-essai) | Reproducible evaluation of models on scientific tasks, with pinned models, data and seeds. | ○○○ |
-| [**.github**](https://github.com/fonderie-dev/.github) | Organisation profile, contribution and security guidance, shared Python CI workflow. | — |
-| [**website**](https://github.com/fonderie-dev/website) | Source of the [Fonderie website](https://fonderie-dev.github.io/website/). | — |
+| Project | Intended purpose | Site | Status |
+|---|---|---|:---:|
+| [**Affinage**](https://github.com/fonderie-dev/fonderie-affinage) | Training and fine-tuning open models on domain data, and packaging the results as customised local models. | [Outline](https://fonderie-dev.github.io/fonderie-affinage/) | ○○○ |
+| [**Burin**](https://github.com/fonderie-dev/fonderie-burin) | Inspecting and editing model weights: tensor statistics, checkpoint comparison and recorded edits. | [Outline](https://fonderie-dev.github.io/fonderie-burin/) | ○○○ |
+| [**Essai**](https://github.com/fonderie-dev/fonderie-essai) | Reproducible evaluation of models on scientific tasks, with pinned models, data and seeds. | [Outline](https://fonderie-dev.github.io/fonderie-essai/) | ○○○ |
+| [**.github**](https://github.com/fonderie-dev/.github) | Organisation profile, contribution and security guidance, shared Python CI workflow. | — | — |
+| [**website**](https://github.com/fonderie-dev/website) | Source of the Fonderie website. | [Website](https://fonderie-dev.github.io/website/) | — |
 
 The names come from the foundry. *Affinage* is the refining of molten metal, a *burin* is the engraver's chisel, and an *essai* is the assay that establishes what a casting actually contains.
 

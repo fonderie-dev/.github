@@ -45,3 +45,7 @@ ruff check . && ruff format --check . && python -m pytest
 mould whose cells read as a weight matrix. `assets/branding/` holds a copy of
 the SVG, a 256 px PNG, and the 500 px organisation avatar rendered with
 `rsvg-convert -b '#1c1916' -w 500 -h 500`.
+
+## Licence
+
+Apache-2.0; see [LICENSE](LICENSE). The Fonderie mark: © 2026 R. Heller.

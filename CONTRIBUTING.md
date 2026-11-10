@@ -45,6 +45,23 @@ Unused words for later repositories: *coulée* (casting), *creuset*
 - Report a metric together with the record that produced it. A number that
   cannot be traced to a record is not reported.
 
+## Project sites
+
+- Each atelier publishes a project site from `docs/`, a Hugo site in the
+  Fonderie design deployed to `https://fonderie-dev.github.io/<repository>/`
+  by `.github/workflows/pages.yaml`. The repository's homepage field points
+  there, and so do `Documentation` in `pyproject.toml` and the atelier's page
+  on the website.
+- The site is an outline. A section that describes functionality carries a
+  *coming soon* stamp until the code it describes exists and is tested; only
+  then does it become text.
+- The stylesheet, mark, legal pages and link checker come from the
+  [website](https://github.com/fonderie-dev/website); `data/ateliers.yaml`
+  and the layouts are the same in every atelier. Change them in all places at
+  once, and keep each atelier's status in step with its README, the website
+  and the organisation profile.
+- `docs/` and `.github/` stay out of the sdist.
+
 ## Shared workflow
 
 Do not copy workflow YAML between repositories. Call the shared one:
