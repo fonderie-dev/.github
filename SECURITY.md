@@ -2,9 +2,10 @@
 
 ## Reporting
 
-Open a private security advisory on the affected repository, or contact the
-maintainer directly. Do not open a public issue for anything involving
-credentials, personal data, or weights trained on restricted data.
+Open a private security advisory on the affected repository (Security tab,
+*Report a vulnerability*), or write to fonderie.dev@outlook.com. Do not open
+a public issue for anything involving credentials, personal data, or weights
+trained on restricted data.
 
 ## Data
 
