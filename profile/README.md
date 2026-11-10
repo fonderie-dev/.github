@@ -1,6 +1,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/fonderie-dev/.github/main/profile/icons/fonderie.svg" alt="Fonderie" width="112"></p>
 <h1 align="center">Fonderie</h1>
 <p align="center">AI model engineering for scientific work.<br>By R. Heller.</p>
+<p align="center"><a href="https://fonderie-dev.github.io/website/">Website</a> · <a href="https://fonderie-dev.github.io/website/methode/">Méthode</a> · <a href="https://fonderie-dev.github.io/website/a-propos/">À propos</a></p>
 
 Fonderie trains and fine-tunes open models on domain data, inspects and edits their weights, builds customised local models and evaluates them reproducibly on scientific tasks.
 
@@ -16,6 +17,7 @@ The workshop is at an early stage. The repositories below are scaffolds that sta
 | [**Burin**](https://github.com/fonderie-dev/fonderie-burin) | Inspecting and editing model weights: tensor statistics, checkpoint comparison and recorded edits. | ○○○ |
 | [**Essai**](https://github.com/fonderie-dev/fonderie-essai) | Reproducible evaluation of models on scientific tasks, with pinned models, data and seeds. | ○○○ |
 | [**.github**](https://github.com/fonderie-dev/.github) | Organisation profile, contribution and security guidance, shared Python CI workflow. | — |
+| [**website**](https://github.com/fonderie-dev/website) | Source of the [Fonderie website](https://fonderie-dev.github.io/website/). | — |
 
 The names come from the foundry. *Affinage* is the refining of molten metal, a *burin* is the engraver's chisel, and an *essai* is the assay that establishes what a casting actually contains.
 
@@ -37,7 +39,8 @@ Repositories are Python packages (≥ 3.11) with a `src/` layout, tested with py
 
 ## Elsewhere
 
-- Overview: [r-heller.github.io/website/projects](https://r-heller.github.io/website/projects/)
+- Website: [fonderie-dev.github.io/website](https://fonderie-dev.github.io/website/) — source at [fonderie-dev/website](https://github.com/fonderie-dev/website)
+- Overview of all projects: [r-heller.github.io/website/projects](https://r-heller.github.io/website/projects/)
 - Related organisations: [CTTIR](https://github.com/CTTIR) (computational trauma and tissue injury research) · [Établi](https://github.com/etabli-dev) (tools for research and local knowledge work)
 
 ## Licensing

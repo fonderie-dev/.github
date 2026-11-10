@@ -9,6 +9,8 @@ provide its own.
   foundry or metalworking trade that describes the repository's role
   (`affinage`, `burin`, `essai`). Drop accents in the repository name
   (`fonderie-coulee`) and keep them in titles and prose (*Coulée*).
+- Infrastructure repositories keep their conventional names: `.github` and
+  `website`.
 - The Python distribution matches the repository name (`fonderie-essai`); the
   import package uses an underscore (`fonderie_essai`).
 - Code identifiers, docstrings and documentation are in English. The French
